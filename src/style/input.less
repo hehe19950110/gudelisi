@@ -1,0 +1,122 @@
+@import './variables.less';
+@import './init.less';
+.input {
+  display: inline-block;
+  position: relative;
+  input {
+    box-sizing: border-box;
+    width: 208px;
+    font-size: @font-size-5;
+    color: @font-color-2;
+    padding: 6px 0 6px 15px;
+    transition: .3s;
+    .input-style(@base-color-2);
+    .placeholder(@font-color-3);
+  }
+  input:hover {
+    .input-style(@font-color-2);
+  }
+  input:focus {
+    .focus-init();
+    .input-style(@primary-color);
+  }
+  &-disabled,
+  &-disabled input {
+    cursor: not-allowed !important;
+    background-color: @base-color-1;
+  }
+  &-disabled input:focus {
+    .focus-init();
+  }
+  &-disabled input:hover {
+    .input-style(@base-color-2);
+  }
+  .delete,
+  .search {
+    position: absolute;
+    width: 16px;
+    height: 16px; // border: 1px solid green;
+    top: 50%;
+    right: 0;
+    margin-top: -8px;
+    transition: .3s;
+    cursor: pointer;
+  }
+  .search {
+    margin-right: 15px;
+    background: url('/img/search.png') center no-repeat;
+    &:hover {
+      background: url('/img/search-active.png') center no-repeat;
+    }
+  }
+  .delete {
+    margin-right: 39px;
+    background: url('/img/delete.png') center no-repeat;
+    &:hover {
+      background: url('/img/delete-active.png') center no-repeat;
+    }
+  }
+  &-disabled {
+    .delete,
+    .search {
+      cursor: not-allowed;
+    }
+    .delete:hover {
+      background: url('/img/delete.png') center no-repeat;
+    }
+    .search:hover {
+      background: url('/img/search.png') center no-repeat;
+    }
+  }
+  dl {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    .input-style(@base-color-2);
+    border-top: none;
+    dd {
+      padding: 0 15px;
+      height: 30px;
+      line-height: 30px;
+      margin: 0 !important;
+      color: @font-color-2;
+      font-size: @font-size-5;
+      transition: .3s;
+      cursor: pointer;
+      .search-title {
+        margin-right: 15px;
+      }
+      .base-line {
+        border-bottom: 1px solid @base-color-2;
+      }
+      &:hover {
+        background-color: #E3FAFF
+      }
+    }
+  }
+}
+
+.input-search {
+  .delete {
+    margin-right: 15px;
+  }
+}
+
+.input-error {
+  input {
+    .input-style(@error-color);
+    &:focus {
+      .input-style(@error-color);
+    }
+    &:hover {
+      .input-style(@error-color);
+    }
+  }
+  .delete, .delete:hover {
+    background: url('/img/fault.png') center no-repeat;
+    margin-right: 15px;
+  }
+}

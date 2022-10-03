@@ -1,0 +1,43 @@
+@import './variables.less';
+@import './init.less';
+
+.table{
+  border: 1px solid @base-color-1;
+  padding: 0 20px;
+  table{
+    width: 100%;
+    text-align: left;
+    tr{
+      cursor: pointer;
+      transition: .3s;
+      &:hover, &.active{
+        background: #E3FAFF
+      }
+      td,th{
+        line-height: 40px;
+        height: 40px;
+        border-bottom: 1px solid @base-color-1;
+        transition: .3s;
+        // .warp{
+        //   width: 90%;
+        //   overflow:hidden;
+        //   text-overflow:ellipsis;
+        //   white-space:nowrap;
+        // }
+      }
+      &:first-child{
+        &:hover,&.active{
+          background: white;
+        }
+      }
+    }
+  }
+  .ops_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .page{
+      margin: 10px auto;
+    }
+  }
+}
