@@ -9,15 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChrisWen960216/srp-design.git"
+    "url": "git+https://github.com/hehe19950110/gudelisi.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ChrisWen960216/srp-design/issues"
-  },
-  "homepage": "https://github.com/ChrisWen960216/srp-design#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
