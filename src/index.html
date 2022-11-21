@@ -17,6 +17,8 @@
       <div class="introduce-extra desc font-t3">设计规范</div>
     </div>
   </div>
+
+
   <div id="root">
     <section class='font'>
       <header>
@@ -73,9 +75,7 @@
           <dd class='font-t3 base-color-2'>
             <div class="color-box base-color-2-bg"></div>底色2: D3D8DD
           </dd>
-        </dl>
-
-        <dl>
+          <br>
           <dd class='font-t3 base-color-3'>
             <div class="color-box base-color-3-bg"></div>底色3: B6B9C2
           </dd>
@@ -95,71 +95,66 @@
       </aside>
     </section>
 
-    <section class='component'>
+    <section class='component' > 
       <header>
         <span class="title">03. 控件规范</span>
       </header>
-      <div class='top-container clearfix'>
-        <aside class='button'>
+      <div class='top-container' style="display: block; margin: auto;">
+        <div class='button' style="display: block; width: 100%; ">
           <header>
             <span class='extra font-t1'>按钮</span>
           </header>
           <dl>
-            <dd class='font-t4'>默认:
+            <dd class='font-t4'>默认1:
               <button class='btn primary-btn'>启用</button>
             </dd>
-            <dd class='font-t4'>禁用:
+            <dd class='font-t4'>禁用1:
               <button class='btn primary-btn disabled-btn' disabled>禁用</button>
             </dd>
           </dl>
           <dl>
-            <dd class='font-t4'>默认:
+            <dd class='font-t4'>默认2:
               <button class='btn error-btn'>删除</button>
             </dd>
-            <dd class='font-t4'>禁用:
+            <dd class='font-t4'>禁用2:
               <button class='btn error-btn disabled-btn' disabled>禁用</button>
             </dd>
           </dl>
           <dl>
-            <dd class='font-t4'>默认:
+            <dd class='font-t4'>默认3:
               <button class='btn auxiliary-btn'>重置</button>
             </dd>
-            <dd class='font-t4'>禁用:
+            <dd class='font-t4'>禁用3:
               <button class='btn auxiliary-btn disabled-btn' disabled>禁用</button>
             </dd>
           </dl>
           <dl>
-            <dd class='font-t4'>默认:
+            <dd class='font-t4'>默认4:
               <button class='btn'>取消</butto>
             </dd>
-            <dd class='font-t4'>禁用:
+            <dd class='font-t4'>禁用4:
               <button class='btn disabled-btn' disabled>禁用</button>
             </dd>
           </dl>
-        </aside>
-
-        <div class="aside">
-          <aside class="pagenation">
-            <header>
-              <span class='extra font-t1'>翻页</span>
-            </header>
-            <dl class='page'>
-              <dd class='la disabled'>
-                <img src='/img/dis.png' alt="">
-              </dd>
-              <dd>1</dd>
-              <dd class='active'>2</dd>
-              <dd>3</dd>
-              <dd class='ra'>
-                <img src='/img/right.png' alt="">
-              </dd>
-            </dl>
-          </aside>
-
-          <aside class="checkbox-radio clearfix">
-            <header>
-              <span class="extra font-t1">单选框&&复选框</span>
-            </header>
+        </div>
+        <div class="pagenation" style="display: block; width: 100%;">
+          <header style="margin-bottom: 20px;">
+            <span class='extra font-t1'>翻页</span>
+          </header>
+          <dl class='page'>
+            <dd class='la disabled'> <img src='/img/dis.png' alt=""> </dd>
+            <dd>1</dd>
+            <dd class='active'>2</dd>
+            <dd>3</dd>
+            <dd class='ra'> <img src='/img/right.png' alt=""> </dd>
+          </dl>
+        </div>
+        <br>
+        <div class="checkbox-radio " >
+          <header>
+            <span class="extra font-t1">单选框&&复选框</span>
+          </header>
+          <div > 
             <dl>
               <dd class='font-t4'>复选框:
                 <div class="checkbox">
@@ -178,6 +173,7 @@
                 </div>
               </dd>
             </dl>
+  
             <dl>
               <dd class='font-t4'>单选框:
                 <div class="radio">
@@ -196,10 +192,12 @@
                 </div>
               </dd>
             </dl>
-          </aside>
+          </div>
+
         </div>
       </div>
-      <div class="bottom-container clearfix">
+
+      <div class="bottom-container m">
         <aside class='search-select'>
           <header>
             <span class="extra font-t1">搜索/选择框</span>
@@ -328,7 +326,6 @@
             </dd>
           </dl>
         </aside>
-
         <aside class='inputs'>
           <header>
             <span class='extra font-t1'>输入框</span>
@@ -371,11 +368,10 @@
       </header>
       <aside class="top-menus">
         <header>
-          <span class="extra font-t1">顶部标题栏</span>
+          <span class="extra font-t1">1、顶部标题栏</span>
         </header>
-
         <div class="main-container">
-          <span class='extra font-t4'>首页标注:</span>
+          <span class='extra font-t4'>1.首页标注:</span>
           <div class="top-menu">
             <div class="guider">
               <div class="logo main-logo"></div>
@@ -392,9 +388,8 @@
             </div>
           </div>
         </div>
-
         <div class="inside-container">
-          <span class='extra font-t4'>内页标注:</span>
+          <span class='extra font-t4'>2.内页标注:</span>
           <div class="top-menu">
             <div class="guider">
               <div class="logo-menu home"></div>
@@ -410,14 +405,12 @@
             </div>
           </div>
         </div>
-
       </aside>
 
       <aside class="left-menus">
         <header>
-          <span class="extra font-t1">左侧边栏</span>
+          <span class="extra font-t1">2、左侧边栏</span>
         </header>
-
         <div class="left-menus_container">
           <div>
             <header>
@@ -466,7 +459,7 @@
           </div>
           <div>
             <header>
-              <span class="extra font-t4">选中后:</span>
+              <span class="extra font-t4">选中对应课程后:</span>
             </header>
             <div class="left-menu no-icon">
               <dl>
@@ -489,16 +482,16 @@
           </div>
         </div>
       </aside>
+      
       <div class='clearfix'>
         <aside class="right-menus">
           <header>
-            <span class="extra font-t1">右侧边栏</span>
+            <span class="extra font-t1">3、右侧边栏</span>
             <span class='extra'>(不包含媒体发布)</span>
           </header>
-
           <div class="right-menus_container">
             <div>
-              <span class='extra font-t4'>标注:</span>
+              <span class='extra font-t4'>用户信息:</span>
               <div class='right-menu'>
                 <header>
                   <div class='top-icon'></div>
@@ -516,14 +509,13 @@
                       <dd>
                         <div class="menu_content-introduce font-color-1 font-t5">登录状态</div>
                         <div class="btn-group">
-                          <button class='btn error-btn'>暂停</button>
-                          <button class='btn primary-btn'>使用</button>
+                          <button class='btn error-btn'>已下线</button>
+                          <button class='btn primary-btn'>登陆中</button>
                         </div>
                       </dd>
                     </dl>
                   </div>
                 </aside>
-
                 <aside class="menus_contanier argument">
                   <header>
                     <div class="menu-species">
@@ -551,7 +543,6 @@
                     </dl>
                   </div>
                 </aside>
-
                 <aside class="menus_contanier task">
                   <header>
                     <div class="menu-species">
@@ -584,17 +575,16 @@
                       </dd>
                     </dl>
 
-
                     <aside class="menus_contanier argument">
-                    <div class='menu_content'>
-                    <dl>
-                      <dd class='font-color-1 font-t5'>
-                        <span>累计时长</span>
-                        <div class="select-form">
-                          <input type="text" value='100min' readonly>
-                          <div class='select-arrow'></div>
-                        </div>
-                      </dd>
+                      <div class='menu_content'>
+                      <dl>
+                        <dd class='font-color-1 font-t5'>
+                          <span>累计时长</span>
+                          <div class="select-form">
+                            <input type="text" value='100min' readonly>
+                            <div class='select-arrow'></div>
+                          </div>
+                        </dd>
                     </aside>
                     
                     <dl class='page'>
@@ -612,9 +602,6 @@
                 </aside>
               </div>
             </div>
-
-
-
             <div>
               <span class='extra font-t4'>收起:</span>
               <div class="right-menu close">
@@ -634,15 +621,13 @@
                 </dl>
               </div>
             </div>
-            <div></div>
           </div>
-
         </aside>
 
         <div class="messages">
           <aside class="message-centers">
             <header>
-              <span class="extra font-t1">记一笔</span>
+              <span class="extra font-t1">4、记录一笔</span>
             </header>
             <div class="message-centers_container">
               <div>
@@ -693,48 +678,16 @@
               </div>
             </div>
           </aside>
-
-          <aside class="message-modals">
-            <header>
-              <span class="extra font-t1">信息弹框</span>
-            </header>
-            <div class="message-modals_container">
-              <div>
-                <header>
-                  <span class='extra font-t4'>标注:</span>
-                </header>
-                <div class="message-modal">
-                  <div class="messageCenter">
-                    <dl>
-                      <dd class='warning'>
-                        <header>
-                          <div class="status">
-                            <div class="icon"></div>
-                            <span class='font-color-1 font-t5'>2021-04-27 11:10:14</span>
-                          </div>
-                          <div class="delete"></div>
-                        </header>
-                        <div class="message_container">
-                          <div class="message_content font-color-1 font-t5">你的笑怎么忘得了,故事落笔题何须再扰？</div>
-                        </div>
-                      </dd>
-                    </dl>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </aside>
         </div>
       </div>
 
-
       <aside class="tables">
         <header>
-          <span class="extra font-t1">TABLE</span>
+          <span class="extra font-t1">5、TABLE</span>
         </header>
         <div class="tables_container">
           <header>
-            <span class="extra font-t4">标注:</span>
+            <span class="extra font-t4">课程排班:</span>
           </header>
           <div class="table">
             <table class='table-col-7'>
@@ -827,14 +780,12 @@
           </div>
         </div>
       </aside>
+
       <aside class="filters">
         <header>
-          <span class="extra font-t1">条件过滤栏</span>
+          <span class="extra font-t1">6、条件过滤栏</span>
         </header>
-        <div class="filters_container">
-          <header>
-            <span class="extra font-t4">标注:</span>
-          </header>
+        <div >
           <div class="filter">
             <div class="input-group">
               <div class="checkbox">
@@ -843,32 +794,29 @@
                   <span></span>全选
                 </label>
               </div>
-
               <div class="select-form">
                 <input type="text" placeholder="选择授课课程" readonly>
                 <div class='select-arrow'></div>
               </div>
-
               <div class="select-form">
                 <input type="text" placeholder="选择授课老师" readonly>
                 <div class='select-arrow'></div>
               </div>
-
               <div class='input'>
                 <input type="text" placeholder="其他搜索信息" />
                 <div class=''></div>
                 <div class='search'></div>
               </div>
-
             </div>
-            <div class="btn-group">
-              <button class="btn primary-btn">批量升级</button>
+            <div class="btn-group" >
+              <button class="btn primary-btn" >批量升级</button>
             </div>
           </div>
         </div>
       </aside>
-
     </section>
+
+    <br>
 
     <section class="modals">
       <header>
@@ -881,8 +829,9 @@
 
       <aside class='small-modal-group'>
         <header>
-          <span class="extra font-t1">小型弹框(宽度460PX)</span>
+          <span class="extra font-t1">1、小型弹框(宽度460px)</span>
         </header>
+
         <div class="modals-content">
           <div class='left-content'>
             <div class="small-modal modal">
@@ -1099,7 +1048,6 @@
                     </dd>
                   </dl>
                 </div>
-
                 <footer>
                   <button class="btn">取消</button>
                   <button class="btn primary-btn">确认</button>
@@ -1107,174 +1055,60 @@
               </div>
             </div>
 
-            <div class="small-modal modal">
+            <div class="small-modal modal single-upgrade">
               <header>
-                <span class="font-color-2 font-t4">批量升级</span>
+                <span class="font-color-2 font-t4">套餐升级</span>
                 <div class="close"></div>
               </header>
               <div class="modal_container">
-                <header>
-                  <div class="ops_container">
-                    <div class="radio">
-                      <label class='font-color-1 font-t5'>
-                        <input type="radio" />
-                        <span></span>所有课程
-                      </label>
-                    </div>
-                    <div class="radio">
-                      <label class='font-color-1 font-t5'>
-                        <input type="radio" checked/>
-                        <span></span>指定课程
-                      </label>
-                    </div>
-                  </div>
-                  <div class='input'>
-                    <input type="text" placeholder="选择文档位置" readonly />
-                    <div class=''></div>
-                    <div class='search'></div>
-                  </div>
-                </header>
-                <div class="modal_content device-table">
-                  <div class="table">
-                    <table class='table-col-3'>
-                      <tr class='table-header font-color-1 font-t5'>
-                        <th>课程编号</th>
-                        <th>课程名称</th>
-                        <th>授课老师</th>
-
-                      </tr>
-                      <tr class='font-color-2 font-t5'>
-                        <td>
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
-                            </label>
-                          </div>
-                        </td>
-                        <td>学前预习课程</td>
-                        <td>xx老师</td>
-
-                      </tr>
-                      <tr class='font-color-2 font-t5'>
-                        <td>
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
-                            </label>
-                          </div>
-                        </td>
-                        <td>一节完整私教课程</td>
-                        <td>xx老师</td>
-                      </tr>
-                      <tr class='font-color-2 font-t5'>
-                        <td>
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
-                            </label>
-                          </div>
-                        </td>
-                        <td>游泳技巧</td>
-                        <td>xx老师</td>
-                      </tr>
-                      <tr class='font-color-2 font-t5'>
-                        <td>
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
-                            </label>
-                          </div>
-                        </td>
-                        <td>康复拉伸</td>
-                        <td>xx老师</td>
-                      </tr>
-                      <tr class='font-color-2 font-t5'>
-                        <td>
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
-                            </label>
-                          </div>
-                        </td>
-                        <td>健美健体</td>
-                        <td>xx老师</td>
-                      </tr>
-                      <tr class='font-color-2 font-t5'>
-                        <td>
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
-                            </label>
-                          </div>
-                        </td>
-                        <td>核心力量</td>
-                        <td>xx老师</td>
-                      </tr>
-                      <tr class='font-color-2 font-t5'>
-                        <td>
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
-                            </label>
-                          </div>
-                        </td>
-                        <td>综合格斗</td>
-                        <td>xx老师</td>
-                      </tr>
-                      <tr class='font-color-2 font-t5'>
-                        <td>
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
-                            </label>
-                          </div>
-                        </td>
-                        <td>产后恢复</td>
-                        <td>xx老师</td>
-                      </tr>
-                      <tr class='font-color-2 font-t5'>
-                        <td>
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
-                            </label>
-                          </div>
-                        </td>
-                        <td>炫酷搏击操</td>
-                        <td>xx老师</td>
-                      </tr>
-                    </table>
-                    <div class="ops_container">
-                      <dl class='page'>
-                        <dd class='la disabled'>
-                          <img src='/img/dis.png' alt="">
-                        </dd>
-                        <dd>1</dd>
-                        <dd class='active'>2</dd>
-                        <dd>3</dd>
-                        <dd class='ra'>
-                          <img src='/img/right.png' alt="">
-                        </dd>
-                      </dl>
-                    </div>
-                  </div>
+                <div class="modal_content">
+                  <dl class="upgrade-list">
+                    <dd class='font-color-3 font-t5'>选择升级套餐1</dd>
+                    <dd class='font-color-2 font-t5'>升级包班级1</dd>
+                    <dd class='font-color-2 font-t5'>升级包班级2</dd>
+                    <dd class='font-color-2 font-t5'>升级包班级3</dd>
+                    <dd class='font-color-3 font-t5'>选择升级套餐2</dd>
+                    <dd class='font-color-2 font-t5'>升级包班级1</dd>
+                    <dd class='font-color-2 font-t5'>升级包班级2</dd>
+                    <dd class='font-color-2 font-t5'>升级包班级3</dd>
+                    <dd class='font-color-3 font-t5'>选择升级套餐3</dd>
+                    <dd class='font-color-2 font-t5'>升级包班级1</dd>
+                    <dd class='font-color-2 font-t5'>升级包班级2</dd>
+                    <dd class='font-color-2 font-t5'>升级包班级3</dd>
+                    <dd class='font-color-3 font-t5'>选择升级套餐4</dd>
+                    <dd class='font-color-2 font-t5'>升级包班级1</dd>
+                    <dd class='font-color-2 font-t5'>升级包班级2</dd>
+                    <dd class='font-color-2 font-t5'>升级包班级3</dd>
+                    <dd class='font-color-3 font-t5'>选择升级套餐5</dd>
+                    <dd class='font-color-2 font-t5'>升级包班级1</dd>
+                    <dd class='font-color-2 font-t5'>升级包班级2</dd>
+                    <dd class='font-color-2 font-t5'>升级包班级3</dd>
+                  </dl>
+                  <dl class="upgrade-ops">
+                    <dd>
+                      <span class='font-color-1 font-t5'>升级时间:</span>
+                      <div class="select-form">
+                        <input type="text" placeholder="选择升级时间" readonly>
+                        <div class='select-arrow'></div>
+                      </div>
+                    </dd>
+                    <dd>
+                      <span class='font-color-1 font-t5'>开始时间:</span>
+                      <div class="select-form">
+                        <input type="text" placeholder="选择开始时间" readonly>
+                        <div class='select-arrow'></div>
+                      </div>
+                    </dd>
+                  </dl>
                 </div>
                 <footer>
-                  <button class="btn">取消</button>
-                  <button class="btn primary-btn">确认</button>
+                  <button class="btn">上一步</button>
+                  <button class="btn primary-btn">完成</button>
                 </footer>
               </div>
             </div>
           </div>
+
           <div class="right-content">
             <div class="small-modal modal">
               <header>
@@ -1292,7 +1126,6 @@
                       <input type="text" placeholder="选择授课老师" readonly>
                       <div class='select-arrow'></div>
                     </div>
-
                   </div>
                 </header>
                 <div class="modal_content device-table">
@@ -1308,7 +1141,7 @@
                           <div class="checkbox">
                             <label>
                               <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
+                              <span></span>01A8
                             </label>
                           </div>
                         </td>
@@ -1320,7 +1153,7 @@
                           <div class="checkbox">
                             <label>
                               <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
+                              <span></span>01A8
                             </label>
                           </div>
                         </td>
@@ -1332,7 +1165,7 @@
                           <div class="checkbox">
                             <label>
                               <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
+                              <span></span>01A8
                             </label>
                           </div>
                         </td>
@@ -1344,7 +1177,7 @@
                           <div class="checkbox">
                             <label>
                               <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
+                              <span></span>01A8
                             </label>
                           </div>
                         </td>
@@ -1356,7 +1189,7 @@
                           <div class="checkbox">
                             <label>
                               <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
+                              <span></span>01A8
                             </label>
                           </div>
                         </td>
@@ -1368,7 +1201,7 @@
                           <div class="checkbox">
                             <label>
                               <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
+                              <span></span>01A8
                             </label>
                           </div>
                         </td>
@@ -1380,7 +1213,7 @@
                           <div class="checkbox">
                             <label>
                               <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
+                              <span></span>01A8
                             </label>
                           </div>
                         </td>
@@ -1392,7 +1225,7 @@
                           <div class="checkbox">
                             <label>
                               <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
+                              <span></span>01A8
                             </label>
                           </div>
                         </td>
@@ -1404,7 +1237,7 @@
                           <div class="checkbox">
                             <label>
                               <input type="checkbox" checked />
-                              <span></span>00158D0000CABAD5
+                              <span></span>01A8
                             </label>
                           </div>
                         </td>
@@ -1460,57 +1293,170 @@
               </div>
             </div>
 
-            <div class="small-modal modal single-upgrade">
+            <div class="small-modal modal">
               <header>
-                <span class="font-color-2 font-t4">升级</span>
+                <span class="font-color-2 font-t4">批量升级</span>
                 <div class="close"></div>
               </header>
               <div class="modal_container">
-                <div class="modal_content">
-                  <dl class="upgrade-list">
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-3 font-t5'>选择升级包</dd>
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-3 font-t5'>选择升级包</dd>
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-3 font-t5'>选择升级包</dd>
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-2 font-t5'>升级包1</dd>
-                    <dd class='font-color-3 font-t5'>选择升级包</dd>
+                <header>
+                  <div class="ops_container">
+                    <div class="radio">
+                      <label class='font-color-1 font-t5'>
+                        <input type="radio" />
+                        <span></span>所有课程
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label class='font-color-1 font-t5'>
+                        <input type="radio" checked/>
+                        <span></span>指定课程
+                      </label>
+                    </div>
+                  </div>
+                  <div class='input'>
+                    <input type="text" placeholder="选择课程" readonly />
+                    <div class=''></div>
+                    <div class='search'></div>
+                  </div>
+                </header>
+                <div class="modal_content device-table">
+                  <div class="table">
+                    <table class='table-col-3'>
+                      <tr class='table-header font-color-1 font-t5'>
+                        <th>课程编号</th>
+                        <th>课程名称</th>
+                        <th>授课老师</th>
 
-                  </dl>
-                  <dl class="upgrade-ops">
-                    <dd>
-                      <span class='font-color-1 font-t5'>升级时间:</span>
-                      <div class="select-form">
-                        <input type="text" placeholder="选择升级时间" readonly>
-                        <div class='select-arrow'></div>
-                      </div>
-                    </dd>
-                    <dd>
-                      <span class='font-color-1 font-t5'>开始时间:</span>
-                      <div class="select-form">
-                        <input type="text" placeholder="选择开始时间" readonly>
-                        <div class='select-arrow'></div>
-                      </div>
-                    </dd>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>01A8
+                            </label>
+                          </div>
+                        </td>
+                        <td>学前预习课程</td>
+                        <td>xx老师</td>
 
-                  </dl>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>01A8
+                            </label>
+                          </div>
+                        </td>
+                        <td>一节完整私教课程</td>
+                        <td>xx老师</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>01A8
+                            </label>
+                          </div>
+                        </td>
+                        <td>游泳技巧</td>
+                        <td>xx老师</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>01A8
+                            </label>
+                          </div>
+                        </td>
+                        <td>康复拉伸</td>
+                        <td>xx老师</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>01A8
+                            </label>
+                          </div>
+                        </td>
+                        <td>健美健体</td>
+                        <td>xx老师</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>01A8
+                            </label>
+                          </div>
+                        </td>
+                        <td>核心力量</td>
+                        <td>xx老师</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>01A8
+                            </label>
+                          </div>
+                        </td>
+                        <td>综合格斗</td>
+                        <td>xx老师</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>01A8
+                            </label>
+                          </div>
+                        </td>
+                        <td>产后恢复</td>
+                        <td>xx老师</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>01A8
+                            </label>
+                          </div>
+                        </td>
+                        <td>炫酷搏击操</td>
+                        <td>xx老师</td>
+                      </tr>
+                    </table>
+                    <div class="ops_container">
+                      <dl class='page'>
+                        <dd class='la disabled'>
+                          <img src='/img/dis.png' alt="">
+                        </dd>
+                        <dd>1</dd>
+                        <dd class='active'>2</dd>
+                        <dd>3</dd>
+                        <dd class='ra'>
+                          <img src='/img/right.png' alt="">
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
                 </div>
                 <footer>
-                  <button class="btn">上一步</button>
-                  <button class="btn primary-btn">完成</button>
+                  <button class="btn">取消</button>
+                  <button class="btn primary-btn">确认</button>
                 </footer>
               </div>
             </div>
@@ -1520,7 +1466,7 @@
 
       <aside class="middle-modal-group">
         <header>
-          <span class="extra font-t1">中型弹框(宽度600PX)</span>
+          <span class="extra font-t1">2、中型弹框(宽度600PX)</span>
         </header>
 
         <div class="modal middle-modal edit-device">
@@ -1744,9 +1690,8 @@
 
       <aside class="large-modal-group">
         <header>
-          <span class="extra font-t1">大型弹框(宽度700PX)</span>
+          <span class="extra font-t1">3、大型弹框(宽度700PX)</span>
         </header>
-
         <div class="modal large-modal add-device">
           <header>
             <span class="font-color-2 font-t4">编辑</span>
@@ -1888,9 +1833,8 @@
 
       <aside class="warning-modal-group">
         <header>
-          <span class="extra font-t1">警告弹框</span>
+          <span class="extra font-t1">4、警告弹框</span>
         </header>
-
         <div class="warning-modals">
           <div class="modal warning-modal delete-modal">
             <header>
@@ -1917,11 +1861,7 @@
             </footer>
           </div>
         </div>
-
-
-
       </aside>
-
     </section>
   </div>
 </body>
